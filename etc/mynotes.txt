@@ -1,0 +1,6 @@
+nodes are “keys” to classes. Collection struct. ie:
+
+struct Stu_specifier{
+	ID = 24353545
+	stuptr* //stuptr is a pointer to an instance of the student class
+}

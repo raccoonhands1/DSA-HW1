@@ -1,0 +1,22 @@
+400
+20
+Z -1 -1
+F 12345 KleinmanRonald
+Z -1 -1
+B 87654 SmithMary
+B 54321 BerraYogi
+S -1 -1
+B 67890 RizzutoPhil
+G -1 -1
+G -1 -1
+Z -1 -1
+H -1 -1
+D -1 -1
+S -1 -1
+F 67890 MantleMickey
+B 89300 KoufaxSandy
+B 89012 KoufaxSandy
+F 99887 MarisRoger
+S -1 -1
+F 62109 FordWhitey
+B 10200 SkowronMoose

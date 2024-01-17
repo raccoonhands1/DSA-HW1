@@ -1,0 +1,103 @@
+//start of the textbook notes
+::Assembly language for x86 processors Kip Irvine
+
+
+// // CH1
+L0 is instruction in native machine language that executes with a relatively small number of electronic circuits
+L0 is typically not programmed in
+L1 is the layer above L0 which is easier to program in
+L1 Interpretation -- as L1 is running, each instruction is decoded and executed from an L0
+L1 Translation -- L1 program converted to L0 program and executed by L0 directly on the hardware
+
+//VIRTUAL MACHINES
+VM1 executes commands written in L1. 
+VM0 executes commands written in L0.
+VM's can be constructed of hardware OR software
+People can write programs for VM1s or programs written in VM1s can be interpreted and tanslated/executed on machine VM0'small
+//note to self: I dont get what that line is even saying. Why did they make it so complicated? Review later.
+VM2's can be easily understood, repeat for VM(n) so that it's easier for viewers to understand. 
+//note to self:: longer compilation times == higher VM's???
+
+//LEVELS
+Level 1 :: digital logic hardware
+Level 2 :: Instruction set architecture (move, add, multiply) done by computer chip manufacturers. Each machine language instructions is executed either directly by computers hardware or by an embedded program within the microprocessor. 
+//note to self :: I FUCKING LOVE LEVEL 2!!!!! RESEARCH THAT LATER (how chip-embedded programs work)
+Level 3 :: Assembly language, easily translated to ISA level (L2)
+Level 4 :: high level language ie:: C++
+
+//BINARY
+Mneumonic :: '1' == base(2) ^ position
+1000 == 2^3 + 0^2 + 0^1 + 0^0
+0110 == 0^3 + 2^2 + 2^1 + 0^0
+etc...
+
+least significant bit is on the right and most is the leftmost bit
+
+Weighted positional notation represents a conveninent wy to calc the decimal value of an unsigned binary integer having n digits
+dec = (D_(n-1) * 2^(nvm just look it up...))
+
+to convert a decimal to binary, keep dividing by 2 and if there's a remainder it becomes a 1 in the binary
+ie:
+37/2 = 18 remainder 1
+18/2 = 9 remainder 0
+9/2 = 4 remainder 1
+4/2 = 2 remainder 0
+2/2 = 1 remainder 0
+1/2 = 0 remainder 1
+
+final answer:: 0010.1001
+
+binary addition:: 
+4+7 = 11
+
+0000.0100 +
+0000.0111 =
+0000.1011
+
+notice how 3rd 1 from the 4 added to the 1 from the 7 becomes '10' in 11
+
+hence:: 1+1 = 10 1+0 = 1 0+1 = 1 0+0 = 0
+
+word = 2 bytes doubleword = 4 bytes quadword = 8 bytes etc...
+
+//HEXADECIMAL
+possible values :: 0123456789ABCDEF
+
+Hex -> decimal :: 
+hex 3BA4 (refer to table)
+
+(3*16^3)+(11*16^2)+(10*16^1)+(4*16^0) = (integer) 15268
+
+decimal -> hex :: keep dividing by 16
+422/16 quotient 26 remainder 6
+26/16 quotient 1 remainder A (11)
+1/16 quotient 0 remainder 1
+
+final answer = 1A6
+
+hex addition is same as binary addition. 
+X+Y = s
+X=6A2
+Y=49A 
+s=B3C
+
+//SIGNED BINARY
+sign bit in the most significant bit position
+
+TWOS COMPLIMENT -> reverse the bits 1000 => 0001 and add 1 => 0010
+
+This is useful because it removes the need for separate digital circuits to handle addition and subtraction
+(A-B) => (A + (-B)) with 2s COMPLIMENT
+
+hex ex::
+6A3D --> 95C2 + 1 --> 95C3
+95C3 --> 6A3C + 1 --> 6A3D
+
+QUIZ
+
+A49 + 
+6DD =
+(hex) 1126
+
+
+know how to do binary -> hex

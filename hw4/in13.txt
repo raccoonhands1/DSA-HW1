@@ -1,0 +1,26 @@
+40
+20
+
+S
+Z
+P
+
+H 1234 JohnJones 4
+H 4567 MarySmith 2
+H 9876 TomJones 8
+S
+L
+Z
+P
+
+H 6732 BobbyDoll 4
+N 4
+N 8
+
+H 3434 ChuckNorris 7
+H 7676 EliotNess 2
+L
+H 0123 AdamSmith 9
+L
+H 6123 KingMidas 5
+P
