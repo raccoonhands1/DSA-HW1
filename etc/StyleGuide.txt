@@ -1,0 +1,14 @@
+note:: this is a style guide for myself and is a reminder to myself that this is my style
+
+const THIS_IS_A_CONST
+
+var changingVariable
+
+enum MyEnum
+
+class MyClass
+interface MyInterface
+typedef MyType
+
+private <type> myFunction_
+public <type> myFunction
